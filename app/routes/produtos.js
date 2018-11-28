@@ -1,6 +1,10 @@
 module.exports = (app) =>{
     app.get('/produtos', (req, res) => {
-        res.render("produtos/lista")
+        var connection = app.infra.dbConnection()
+        connection.query('select * from produtos', (erros, resultado) =>{
+            res.render("produtos/lista", {lista:resultado})
+        });
+        connection.end()        
     })    
 }
 
