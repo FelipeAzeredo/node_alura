@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/FelipeAzeredo/node_alura#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "express-load": "^1.1.16",
+    "express-validator": "^5.3.0",
     "mysql": "^2.16.0",
     "nodemon": "^1.18.6"
   }
